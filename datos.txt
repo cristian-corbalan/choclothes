@@ -1,0 +1,14 @@
+Carrera: Diseño y Desarrollo Web
+Materia: Portales y Comercio Electrónico
+Cuatrimestre: 4°
+Año: 2024
+Turno: Noche
+Comisión: DWN4AV
+Apellido y Nombre: Tamanaha, Maria Andrea
+Docente: Santiago Gallino
+Carácter de Entrega: (1er parcial).
+
+//--------> Datos del Adm
+
+User:andretamanaha@decasport.com
+Password:1234

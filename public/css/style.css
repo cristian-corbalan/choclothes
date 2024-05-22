@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"sans-serif","helvetica","arial";
+}
+
+
+header,main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+body {
+    background-color: #dfe0e2;
+    margin:auto;
+    background-attachment: fixed;
+}
+
+p { font-size: 20px;
+
+}
+
+.navbar-brand{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navbar{
+    background-color: rgb(239, 239, 240);
+    margin-bottom: 25px;
+    opacity: 0.95;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.nav-link{color: #34568b;
+
+}
+
+.navbar-toggler{background-color: #a7a9ac;
+
+}
+
+
+.botones_all,.botonProducto{
+    background-color: rgba(230, 230, 230, 0.90);
+    transition: all 3s ease-in-out;
+    color: black;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.boton_orden{
+    background-color: rgba(230, 230, 230, 0.90);
+
+}
+
+.botonProducto:hover, .botonProducto{
+    color: 	#6495ED;
+    background-color: rgba(230, 230, 230, 0.90);
+}
+
+
+h2{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+footer h2{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+footer p{ font-size: 18px;
+}
+
+
+h3{
+    font-size: 18px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.logo{display: none}
+
+
+footer{ background: white;
+
+}
+
+.precio{
+    text-align: center;
+    font-size: 18px;
+    text-shadow: 1px 1px rgb(255, 238, 204);
+}
+
+
+.imgAdm{max-width: 100px;
+
+}
+
+
+
+
+
+ /******* LOGIN *****-*/
+
+ .login form{
+    width: 450px;
+    background: transparent;
+    border: 1px solid rgb(250, 248, 248);
+    backdrop-filter: blur(9px);
+    color: rgb(10, 10, 10);
+    border: solid rgb(3, 3, 3);
+    padding: 30px 40px;
+    margin-top: 30px;
+}
+
+.login h1 {
+    color: rgb(253, 253, 253);
+
+}
+
+.input::placeholder{
+    color: rgb(158, 155, 155);
+  }
+
+.form div i {
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+
+  }
+
+.login {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+
+
+.login{
+    font-size: 14.5px;
+
+    margin: 20px 0 15px;
+}
+
+
+ /******* TARJETAS *******/
+
+ .tarjeta{
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: relative;
+  }
+
+
+.tarjeta_imagen {
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+
+.tarjeta_imagen img {
+  max-width: 100%;
+  height: auto;
+ }
+
+  .tarjeta_imagen img {
+    display: block;
+    -webkit-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+  }
+
+  .tarjeta_imagen img:hover {
+    -o-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+  }
+
+
+
+
+
+    /************************************** QUIENES SOMOS (Home) *******************************************/
+
+.configuracionquienessomos, .configuracionnewin {
+    background-color:white;
+    padding: 25px;
+    margin-top: 5px;
+    box-shadow: 5px 5px  rgba(230, 230, 230, 0.90);
+}
+
+.configuracionquienessomos div, .configuracionnewin {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+   /* font-size: 40px;*/
+}
+
+.configuracionquienessomos div img {
+    width: 100%;
+}
+
+    /************************************************* NEW IN *************************************************/
+
+
+.configuracionnewin{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 15px;
+    border: 0;
+}
+
+
+
+/*ES DECIR SIEMPRE QUE LA PANTALLA TENGA AL MENOS 576px*/
+
+@media screen and (min-width:576px) {
+    section{ padding: 1.5rem;
+    }
+
+    .configuracionquienessomos {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .configuracionquienessomos > div:nth-child(1) {
+        width: 59%;
+        padding: 40px;
+    }
+
+    .configuracionquienessomos > div:nth-child(2) {
+        width: 40%;
+    }
+
+    .configuracionquienessomos > div:nth-child(2) img {
+        width: 100%;
+    }
+
+
+
+    /************ NEWIN ****************/
+
+    .configuracionnewin> div:nth-child(1) {
+        width:auto;
+        padding: 40px;
+    }
+
+
+    .container-boton{
+        border-radius: 50%;
+        bottom: 20px;
+        right: 25px;
+        padding: 25px;
+        transition: ease 0.3s;
+        animation: efecto 1.2s infinite;
+    }
+
+    .container-boton:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+    .boton{
+        width: 60px;
+        transition: ease 1s;
+    }
+
+    .boton_whtsapp{
+        width: 40px;
+        transition: ease 1s;
+    }
+
+
+}
+
+/*PANTALLA TENGA AL MENOS 768 px DISPONIBLES*/
+
+@media screen and (min-width:768px) {
+    section{ padding: 1.5rem;
+    }
+
+    .configuracionnewin{
+        flex-direction: row;
+    }
+    .configuracionquienessomos {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+
+/*PANTALLA TENGA AL MENOS 993px DISPONIBLES*/
+
+@media screen and (min-width:993px) {
+
+    .logo{display: block;
+          font-size: 40px;
+    }
+
+    h1{ display:block;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+        background-color: white;
+        /*box-shadow: 5px 5px  rgba(230, 230, 230, 0.90);*/
+        border: thin solid transparent;
+
+    }
+
+
+    .login h1{
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .configuracionquienessomos div{
+        font-size: 35px;
+    }
+
+    .informaciongeneral > h1{
+        font-size: 15px;
+    }
+
+}
